@@ -8,3 +8,7 @@ dependencyResolutionManagement {
     }
 }
 
+//dependencies {
+//    implementation 'com.github.Decver:common-dto:Tag'
+//}
+
