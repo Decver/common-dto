@@ -13,8 +13,11 @@ import java.util.UUID;
 @NoArgsConstructor
 @Builder
 public class NotificationEvent {
-    private UUID userId;
-    private String type;
-    private String content;
-    private Instant createAt;
+    private String eventId;
+    private NotificationType eventType;
+    private UUID senderId;
+    private UUID receiverId;
+    private String message;
+    private Instant createdAt;
+    private Map<String, Object> data;
 }
