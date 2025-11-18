@@ -15,21 +15,21 @@ java {
 //    mavenCentral()
 //}
 
-publishing {
-    publications {
-        mavenPub(MavenPublication) {
-             from components.java
-        }
-    }
-    repositories {
-        maven {
-            url = uri("https://github.com/Decver/common-dto")
-            credentials {
-                username = project.findProperty("gpr.user") ?: System.getenv("GITHUB_ACTOR")
-                password = project.findProperty("gpr.key") ?: System.getenv("GITHUB_TOKEN")            }
-        }
-    }
-}
+//publishing {
+//    publications {
+//        mavenPub(MavenPublication) {
+//             from components.java
+//        }
+//    }
+//    repositories {
+//        maven {
+//            url = uri("https://github.com/Decver/common-dto")
+//            credentials {
+//                username = project.findProperty("gpr.user") ?: System.getenv("GITHUB_ACTOR")
+//                password = project.findProperty("gpr.key") ?: System.getenv("GITHUB_TOKEN")            }
+//        }
+//    }
+//}
 
 dependencies {
     compileOnly 'org.projectlombok:lombok:1.18.30'
