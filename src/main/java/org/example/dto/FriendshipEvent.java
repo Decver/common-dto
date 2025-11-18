@@ -13,8 +13,6 @@ import java.util.UUID;
 @Builder
 public class FriendshipEvent {
     private UUID senderId;
-    private String nameSender;
-    private String urlPhotoSender;
     private UUID receiverId;
     private String status;
 }
