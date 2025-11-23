@@ -16,19 +16,19 @@ java {
 //}
 
 publishing {
-    publications {
-        mavenPub(MavenPublication) {
-             from components.java
-        }
-    }
-    repositories {
-        maven {
-            url = uri("https://github.com/Decver/common-dto")
-            credentials {
-                username = project.findProperty("gpr.user") ?: System.getenv("GITHUB_ACTOR")
-                password = project.findProperty("gpr.key") ?: System.getenv("GITHUB_TOKEN")             }
-        }
-    }
+   publications {
+       mavenPub(MavenPublication) {
+            from components.java
+       }
+   }
+   repositories {
+       maven {
+           url = uri("https://github.com/Decver/common-dto")
+           credentials {
+               username = project.findProperty("gpr.user") ?: System.getenv("GITHUB_ACTOR")
+               password = project.findProperty("gpr.key") ?: System.getenv("GITHUB_TOKEN")            }
+       }
+   }
 }
 
 dependencies {
