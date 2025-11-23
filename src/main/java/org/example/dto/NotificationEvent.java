@@ -18,7 +18,10 @@ public class NotificationEvent {
     private NotificationType eventType;
     private UUID senderId;
     private UUID receiverId;
+    private String nameSender;
     private String message;
+    private String urlPhotoSender;
     private Instant createdAt;
+    private NotificationType status;
     private Map<String, Object> data;
 }
